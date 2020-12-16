@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		"use strict"
+
+		let a = parseInt(prompt('Введите 1 число:'));
+		let b = parseInt(prompt('Введите 2 число:'));
+
+		function doSum(a, b) {
+			let sum = a + b;
+			return alert(`Сумма: ${sum}`);
+		}
+
+		function doSubtraction(a, b) {
+			let sum = a - b;
+			return alert(`Разность: ${sum}`);
+		}
+
+		function doDivision(a, b) {
+			let sum = a / b;
+			return alert(`Частное: ${sum}`);
+		}
+
+		function doMultiplication(a, b) {
+			let sum = a * b;
+			return alert(`Произведение: ${sum}`);
+		}
+
+		doSum(a, b);
+		doSubtraction(a, b);
+		doDivision(a, b);
+		doMultiplication(a, b)
+
+	</script>
+</body>
+
+</html>
