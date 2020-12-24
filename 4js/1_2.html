@@ -70,6 +70,9 @@ highlighted значение true.
 			this.highlighted = false;
 		}
 
+		AttachedPost.prototype = Object.create(Post.prototype);
+		AttachedPost.prototype.constructor = AttachedPost;
+
 		AttachedPost.prototype.makeTextHighlighted = function () {
 			this.highlighted = true;
 		};
