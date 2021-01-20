@@ -125,7 +125,7 @@ let app = {
                 // поля в виде строки, затем номер строки игровой доски в виде числа, последним аргументом передаем this.config.cols[i]
                 field = this.generateField('white', rowNum, this.config.cols[i]);
                 // 2.6 присваиваем в currentColorClass строку "black"
-                currentColorClass = "blackField";
+                currentColorClass = "black";
             } else {
                 // 2.7 делаем то же что и в п. 2.5, только первым параметром передаем "black"
                 field = this.generateField('black', rowNum, this.config.cols[i]);

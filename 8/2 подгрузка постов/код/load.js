@@ -12,6 +12,7 @@ function init() {
     // init.
     if (window.innerHeight === document.body.offsetHeight) {
         insertPosts();
+        init();
     }
 }
 init();
@@ -35,7 +36,7 @@ function insertPosts() {
         postsMarkup = getPostMarkup(i);
     }
     // 3.2 Перед scrollCheck вставьте записанную в postsMarkup разметку
-    scrollCheck.insertAdjacentHTML('beforebegin', `${postsMarkup}`);
+    scrollCheck.insertAdjacentHTML('beforebegin', postsMarkup);
 }
 
 /**
