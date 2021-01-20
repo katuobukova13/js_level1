@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		"use strict";
+
+		let arg1 = parseInt(prompt('Введите 1 число:'));
+		let arg2 = parseInt(prompt('Введите 2 число:'));
+		let operation = prompt('Введите символ операции:  +  ||  -  ||  *  ||  /');
+
+		mathOperation(arg1, arg2, operation);
+
+		function doSum(a, b) {
+			let sum = a + b;
+			return sum;
+		}
+
+		function doSubtraction(a, b) {
+			let sum = a - b;
+			return sum;
+		}
+
+		function doDivision(a, b) {
+			let sum = a / b;
+			return sum;
+		}
+
+		function doMultiplication(a, b) {
+			let sum = a * b;
+			return sum;
+		}
+
+		function mathOperation(arg1, arg2, operation) {
+			switch (operation) {
+				case '+':
+					return doSum(arg1, arg2);
+				case '-':
+					return doSubtraction(arg1, arg2);
+				case '*':
+					return doMultiplication(arg1, arg2);
+				case '/':
+					return doDivision(arg1, arg2);
+				default:
+					alert("Нет такой операции");
+			}
+		}
+	</script>
+</body>
+
+</html>
